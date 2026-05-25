@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="text.css">
+<title>Портфолио работ</title>
+<style type="text/css">
+ul.menu{
+list-style:none; /* Убираем маркер списка */
+/* background:Gold;  Задаём цвет фона меню или списка */
+width:8em; /* Ширина блока */
+padding:0 0 0 0; /* Отступы внутри блока */
+font-size: 14pt;
+}
+li.submenu{
+width:90%; /* Ширина пункта */
+margin:0.3em 1em 0.3em 0; /* задаём значение полей вокруг пункта */
+padding:0.5em; /* Задаём отступы внутри пункта */
+background:rgb(25, 88, 9); /* Цвет фона */
+}
+h3.mainmenu{
+width:90%; /* Ширина пункта */
+margin:0.3em 1em 0.3em 0; /* задаём значение полей вокруг пункта */
+padding:0.5em; /* Задаём отступы внутри пункта */
+background:rgb(25, 88, 9); /* Цвет фона */
+}
+li a{
+text-decoration:none; /* Убираем нижнее подчеркивание у ссылок */
+color:#03ce2f; /* Цвет текста ссылки */
+}
+/*стиль элемента списка и ссылки при наведении на него курсора мыши*/
+li:hover,li:hover a {
+background:DarkCyan; /* Фон пункта меню при выделении */
+cursor:pointer; /* Устанавливаем вид курсора при выделении пункта меню */
+}
+</style>
+</head>
+<body background='Содержание/1920x1080-SymbolFall.gif'onload="digitalWatch()" >
+<!--Создаём таблицу контейнер, которой задаём следующее
+оформление:
+border="1" - рамка вокруг контейнера. Увеличив число, можно увеличить толщину рамки.
+align="center" - размещаем контейнер по центру экрана.
+rules="rows" - убираем двойную рамку.
+style="width:60%;" - добавляем стилевое свойства, делающее контейнер и весь сайт "резиновым".
+Сделать полноценный адаптивный дизайн, этим способом невозможно.-->
+<table border="1" align="center" rules="rows" style="width:60%;">
+<!--Создаём строку-->
+<tr>
+<!--Создаём ячейку строки-->
+<td>
+<!--ШАПКА САЙТА-->
+
+<!--В ячейке строки создаём ещё одну таблицу для шапки сайта.
+Оформление:
+border="0" - рамка толщиной в 0 px
+background="URL" - картинка в шапке сайта, если требуется.
+Адрес картинки вы должны вставить свой.
+bgcolor="#7FFFD4" - фоновый цвет в шапке, если нет картинки.
+cellpadding="10" - отступ содержимого от рамки не менее 10px.
+style="width:100%; border-radius:5px;" - добавляем "резиновость"
+и закругляем уголки рамки-->
+<table border="0" background="URL" bgcolor="#014221" cellpadding="10" style="width:100%; border-radius:5px;">
+<!--Создаём строку таблицы-->
+<tr>
+<!--Создаём ячейку таблицы с логотипом-->
+<td> <img src='logo_png.png' width='170' height='150'> </td>
+<th>
+<!--Содержание ячейки Заголовок сайта-->
+<h1 style='margin-bottom: -25px; color:rgb(43, 255, 0);'>Портфолио практических работ <br>Еремеева Антона Андреевича</h1>
+<h4>представлены работы с использованием основ <br>языка веб-программирования JavaScript</h4>
+<h5  align='right' style='margin-bottom: -25px' id='gh'><h5><!--Сегодняшняя дата-->
+<h5  align='right' id='tm' ><h5><!--Время в данный момент-->
+<!--Закрываем таблицу ШАПКА САЙТА-->
+</th>
+</tr>
+</table>
+<!--ОСНОВНОЙ КОНТЕНТ-->
+
+<!--В этой же ячейке контейнера создаём ещё одну таблицу
+для основного контента.
+Оформление как и в предыдущей таблице-->
+
+<table border="1" bgcolor="LightGray" cellpadding="10" style="width:100%; border-radius:5px;">
+<!--Создаём строку-->
+<tr>
+<!--Меню-->
+<!--Создаём ячейку меню-->
+<td bgcolor="LightGray" valign='top'>
+<h3 class='mainmenu'>Меню сайта:</h3>
+<nav>
+          <ul class='menu'>
+				
+               <li class='submenu'><a href="index.html">Главная</a></li>
+               <li class='submenu'><a href="page2.html">Фотогалерея</a></li>
+               <li class='submenu'><a href="page3.html">Итоговый тест</a></li>
+          </ul>
+</nav>
+
+</td>
+<td rowspan="2" style="width:80%">
+<form name="f">
+<h2> Введите свои данные </h2>
+<TABLE>
+<TR><TD><B> Фамилия:<B></TD>
+<TD><INPUT type='text' NAME="Family" SIZE='20'
+onBlur="this.value=this.value.charAt(0).toUpperCase()+this.value.slice(1)"></TD></TR>
+<TR><TD><B> Имя:<B></TD>
+<TD><INPUT type='text' NAME="Name" SIZE='20'
+onBlur="this.value=this.value.charAt(0).toUpperCase()+this.value.slice(1)"></TD></TR>
+<TR><TD><B> Дата рождения:<B></TD>
+<TD><INPUT type='text' NAME="Data" SIZE='20'>
+</TD></TR>
+<TR><TD><B> Группа:<B></TD>
+     
+<TD>
+<SELECT name="Group" SIZE='1'>
+<OPTION VALUE="1а">1а</option>
+ <OPTION VALUE ="1б">1б</option>
+ <OPTION VALUE ="1в">1в</option>
+ <OPTION VALUE ="1г">1г</option>
+ <OPTION VALUE="2а">2а</option>
+ <OPTION VALUE ="2б">2б</option>
+ <OPTION VALUE ="2г">2г</option>
+<OPTION VALUE ="2ю">2ю</option>
+<OPTION VALUE="3а">3а</option>
+ <OPTION VALUE ="3б">3б</option>
+ <OPTION VALUE ="3г">3г</option>
+ <OPTION VALUE ="2ю">3ю</option>
+ <OPTION VALUE ="2ю">3ф</option>
+<OPTION VALUE="4а">4а</option>
+ <OPTION VALUE ="4б">4б</option>
+ <OPTION VALUE ="4г">4г</option>
+ <OPTION VALUE ="4ж">4ж</option>
+  <OPTION VALUE ="4ж">4г</option>
+ <OPTION VALUE="5г">5г</option>
+ <OPTION VALUE ="5ж">5ж</option>
+</SELECT>
+</TD></TR>
+</TABLE>
+<hr color='#00ff23  '>
+<h2><center>Итоговый тест по Веб-дизайну</center></h2>
+<font size="4">Вопрос №1.<b> Пример кода: h1 { color: blue}.
+
+     В приведенном выше примере color: blue – определение правило. h1 является –
+</b><br>
+<font size="3">
+<input type="radio" name="a1" id="t1" value="1">  Селектором  <br>
+<input type="radio" name="a1" id="t2" value="0"> Определением <br>
+<input type="radio" name="a1" id="t3" value="0"> Значением <br>
+<br><br>
+<font size="4">Вопрос №2.<b> Какой из следующих элементов используется в качестве структурного контейнера для элементов формы?</b><br>
+<font size="3">
+<input type="radio" name="a2" id="t4" value="0"> hr <br>
+<input type="radio" name="a2" id="t5" value="0"> frame <br>
+<input type="radio" name="a2" id="t6" value="1"> fieldset <br>
+<br><br>
+<font size="4">Вопрос №3.<b> Какая из следующих спецификаций правильная для определения цветового стиля? </b><br>
+<font size="3">
+<input type="radio" name="a3" id="t7" value="0"> H1 {color: FF-00-88} <br>
+<input type="radio" name="a3" id="t8" value="1">  H1 {color: red}<br>
+<input type="radio" name="a3" id="t9" value="0">  H1 {font-color: red}<br>
+<br><br>
+<font size="4">Вопрос №4.<b> Сервис валидации W3C CSS представляет собой бесплатный сервис созданный консорциумом Word Wide Web, которая проверяет каскадные таблицы стилей (CSS) на наличие ошибок, опечаток или неправильного использования.
+
+     Ссылаясь на вышеуказанную информацию, которую одной из следующих особенностей сервис валидации CSS предоставляет.</b><br>
+<font size="3">
+<input type="radio" name="a4" id="g1" value="0"> предлагает исправления для кроссбраузерной совместимости<br>
+<input type="radio" name="a4" id="g2" value="1">  говорит вам, какие спецификации вашего CSS-файла не соответствует спецификации CSS
+<br>
+<input type="radio" name="a4" id="g3" value="0">  определяет потенциальные риски юзабилити
+<br>
+<br><br>
+<font size="4">Вопрос №5.<b>  Возможности CSS? </b><br>
+<font size="3">
+<input type="radio" name="a5" id="g4" value="0">  Изменение HTML-кода веб страницы<br>
+<input type="radio" name="a5" id="g5" value="0"> Изменение содержания контента<br>
+<input type="radio" name="a5" id="g6" value="1"> Управление представлением данных для различных сред, устройств<br>
+<br><br>
+
+<font size="4">Вопрос №6.<b>Какой тег определяет переход на следующую строку?
+
+Выберите по крайней мере один ответ: </b><br>
+<font size="3">
+<input type="radio" name="a6" id="g7" value="1"> br <br>
+<input type="radio" name="a6" id="g8" value="0">  a<br>
+<input type="radio" name="a6" id="g9" value="0">div<br>
+<br><br>
+
+<font size="4">Вопрос №7.<b> Кнопка формы для отправки файла на сервер …</b><br>
+<font size="3">
+<input type="radio" name="a7" id="s1" value="0">  &lt; input type="submit"> <br>
+<input type="radio" name="a7" id="s2" value="0"> &lt;input type="button"> <br>
+<input type="radio" name="a7" id="s3" value="1"> &lt;input type="file"> <br>
+<br><br>
+<font size="4">Вопрос №8.<b>Веб-страница однозначно определяется </b><br>
+<font size="3">
+<input type="radio" name="a8" id="s4" value="1"> адресом url<br>
+<input type="radio" name="a8" id="s5" value="0">  изображениями<br>
+<input type="radio" name="a8" id="s6" value="0"> веб-сервером<br>
+<br><br>
+<font size="4">Вопрос №9.<b>Какой парный тэг используют для выделения полужирным шрифтом?</b><br>
+<font size="3">
+<input type="radio" name="a9" id="s7" value="1"> &lt;B><br>
+<input type="radio" name="a9" id="s8" value="0"> &lt;A><br>
+<input type="radio" name="a9" id="s9" value="0"> &lt;S><br>
+<br><br>
+<font size="4">Вопрос №10.<b> Какие теги из перечисленных ниже определяют элементы-контейнеры?</b><br>
+<font size="3">
+<input type="radio" name="a10" id="l1" value="0"> a<br>
+<input type="radio" name="a10" id="l2" value="0"> img<br>
+<input type="radio" name="a10" id="l3" value="1">div<br>
+<br><br>
+
+<br><br>
+<p align="center">
+<!--кнопка для запуска результату тестирования, по нажатию запускается
+функция для подсчета правильных ответов и вывода результата во всплывающее окно
+alert-->
+<input onclick='Ok();' type="button" value='Результат тестирования'>
+<input type="reset" name="reset" value="Сброс">
+<hr color='#00ff23 '>
+</form>
+</td>
+</tr>
+
+</table>
+
+<table
+border="1"
+bgcolor="#014221"
+height="100"
+cellpadding="10"
+style="width:100%; border-radius:5px;">
+<!--Создаём строку.-->
+<tr>
+<!--Создаём столбец-->
+<th>
+<h6>	&#169;Еремеев Антон, 2024 <br>
+студент 3 курса специальности 44.02.06. Профессиональное обучение (по отраслям) - по отрасли информатика и вычислительная техника
+</h6>
+<!--Закрываем таблицу подвала. При желании в подвале можно сделать несколько строк и столбцов-->
+</th>
+</tr>
+</table>
+<!--Закрываем таблицу контейнера-->
+</td>
+</tr>
+</table>
+
+<!-- пишем скрипт -->
+<script>
+var date = new Date();
+var months = [ 'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря' ];
+var tekm = date.getMonth();
+document.getElementById('gh').innerHTML = "Сегодня " + date.getDate() + ' ' + months[tekm] + ' ' + date.getFullYear(); 
+function digitalWatch() {
+var da = new Date();
+var hours = da.getHours();
+var minutes = da.getMinutes();
+var seconds = da.getSeconds();
+if (hours < 10) hours = "0" + hours;
+if (minutes < 10) minutes = "0" + minutes;
+if (seconds < 10) seconds = "0" + seconds;
+document.getElementById('tm').innerHTML = hours + ":" + minutes + ":" + seconds;
+setTimeout("digitalWatch()", 1000);
+}
+function Ok(){
+var Elem='Фамилия:' + ' ' + document.f.Family.value + '\nИмя:' + ' ' + document.f.Name.value + '\nДата рождения:' + ' ' + document.f.Data.value + '\nГруппа:' + ' ' + document.f.Group.value ;
+var A= new Array(document.f.t1,document.f.t2,document.f.t3,document.f.t4,document.f.t5,document.f.t6,document.f.t7,document.f.t8,document.f.t9,document.f.g1,document.f.g2,document.f.g3,document.f.g4,document.f.g5,document.f.g6,document.f.g7,document.f.g8,document.f.g9,document.f.s1,document.f.s2,document.f.s3,document.f.s4,document.f.s5,document.f.s6,document.f.s7,document.f.s8,document.f.s9,document.f.l1,document.f.l2,document.f.l3);
+var Res=0;
+for(i in A){
+if(A[i].checked) Res = Res + parseInt(A[i].value);
+}
+switch (Res){
+case 10:alert(Elem + "\nВаша отметка - отлично" + "\nКол-во правильных ответов -" + ' ' + Res);
+break;
+case 9:alert(Elem + "\nВаша отметка - отлично" + "\nКол-во правильных ответов -" + ' ' + Res );
+break;
+case 8:alert(Elem + "\nВаша отметка - хорошо" + "\nКол-во правильных ответов -" + ' ' + Res );
+break;
+case 7:alert(Elem + "\nВаша отметка - хорошо"  + "\nКол-во правильных ответов -" + ' ' + Res );
+break;
+case 6:alert(Elem + "\nВаша отметка - хорошо"  + "\nКол-во правильных ответов -" + ' ' + Res );
+break;
+case 5:alert(Elem + "\nВаша отметка - удовлетворительно" + "\nКол-во правильных ответов -" + ' ' + Res );
+break;
+case 4:alert(Elem + "\nВаша отметка - неудовлетворительно" + "\nКол-во правильных ответов -" + ' ' + Res );
+break;
+case 3:alert(Elem + "\nВаша отметка - неудовлетворительно" + "\nКол-во правильных ответов -" + ' ' + Res );
+break;
+case 2:alert(Elem + "\nВаша отметка - неудовлетворительно" + "\nКол-во правильных ответов -" + ' ' + Res );
+break;
+case 1:alert(Elem + "\nВаша отметка - неудовлетворительно" + "\nКол-во правильных ответов -" + ' ' + Res );
+break;
+case 0:alert(Elem + "\nВаша отметка - неудовлетварительно" + "\nКол-во правильных ответов -" + ' ' + Res );
+}
+}
+</script>
+
+</form>
+</body>
+</html>

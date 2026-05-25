@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+     
+<meta charset="utf-8" />
+<link rel="stylesheet" href="text.css">
+<title>Портфолио работ</title>
+<style type="text/css">
+     
+ul.menu{
+list-style:none; /* Убираем маркер списка */
+/* background:#F9E3C3;  Задаём цвет фона меню или списка */
+width:8em; /* Ширина блока */
+padding:0 0 0 0; /* Отступы внутри блока */
+font-size: 14pt;
+}
+li.submenu{
+width:90%; /* Ширина пункта */
+margin:0.3em 1em 0.3em 0; /* задаём значение полей вокруг пункта */
+padding:0.5em; /* Задаём отступы внутри пункта */
+background:rgb(25, 88, 9); /* Цвет фона */
+}
+h3.mainmenu{
+width:90%; /* Ширина пункта */
+margin:0.3em 1em 0.3em 0; /* задаём значение полей вокруг пункта */
+padding:0.5em; /* Задаём отступы внутри пункта */
+background:rgb(25, 88, 9); /* Цвет фона */
+}
+li a{
+text-decoration:none; /* Убираем нижнее подчеркивание у ссылок */
+color:#03ce2f; /* Цвет текста ссылки */
+}
+/*стиль элемента списка и ссылки при наведении на него курсора мыши*/
+li:hover,li:hover a {
+background:#014221; /* Фон пункта меню при выделении */
+color:#00ff55; /* Цвет ссылки */
+cursor:pointer; /* Устанавливаем вид курсора при выделении пункта меню */
+}
+</style>
+</head>
+<body background='Содержание/1920x1080-SymbolFall.gif'onload="digitalWatch()">
+<!--Создаём таблицу контейнер, которой задаём следующее
+оформление:
+border="1" - рамка вокруг контейнера. Увеличив число, можно увеличить толщину рамки.
+align="center" - размещаем контейнер по центру экрана.
+rules="rows" - убираем двойную рамку.
+style="width:60%;" - добавляем стилевое свойства, делающее контейнер и весь сайт "резиновым".
+Сделать полноценный адаптивный дизайн, этим способом невозможно.-->
+<table border="1" align="center" rules="rows" style="width:60%;">
+<!--Создаём строку-->
+<tr>
+<!--Создаём ячейку строки-->
+<td>
+<!--ШАПКА САЙТА-->
+
+<!--В ячейке строки создаём ещё одну таблицу для шапки сайта.
+Оформление:
+border="0" - рамка толщиной в 0 px
+background="URL" - картинка в шапке сайта, если требуется.
+Адрес картинки вы должны вставить свой.
+bgcolor="#7FFFD4" - фоновый цвет в шапке, если нет картинки.
+cellpadding="10" - отступ содержимого от рамки не менее 10px.
+style="width:100%; border-radius:5px;" - добавляем "резиновость"
+и закругляем уголки рамки-->
+<table border="0" background="URL" bgcolor="#014221" cellpadding="10" style="width:100%; border-radius:5px;">
+<!--Создаём строку таблицы-->
+<tr>
+<!--Создаём ячейку таблицы с логотипом-->
+<td> <img src='logo_png.png' width='150' height='100'> </td>
+<th>
+<!--Содержание ячейки Заголовок сайта-->
+<h1  style='margin-bottom: -25px; color:rgb(51, 255, 0); '>Портфолио практических работ <br>Еремеева Антона Андреевича</h1>
+<h4>представлены работы с использованием основ <br>языка веб-программирования JavaScript</h4>
+<h5  align='right' style='margin-bottom: -25px' id='gh'>Тут должна располагаться сегодняшняя дата<h5>
+<h5  align='right' id='tm'>Тут должно располагаться сегодняшнее время<h5>
+<!--Закрываем таблицу ШАПКА САЙТА-->
+</th>
+</tr>
+</table>
+
+<!--ОСНОВНОЙ КОНТЕНТ-->
+
+<!--В этой же ячейке контейнера создаём ещё одну таблицу
+для основного контента.
+Оформление как и в предыдущей таблице-->
+
+<table border="1" bgcolor="#e6e6fa" cellpadding="10" style="width:100%; border-radius:5px;">
+<!--Создаём строку-->
+<tr>
+<!--Меню-->
+<!--Создаём ячейку меню-->
+<td bgcolor="#e6e6fa" valign='top'>
+<h3 class='mainmenu'>Меню сайта:</h3>
+<nav>
+          <ul class='menu'>
+				
+               <li  bgcolor="#e6e6fa"class='submenu'><a href="#">Главная</a></li>
+               <li class='submenu'><a href="page2.html">Фотогалерея</a></li>
+               <li class='submenu'><a href="page3.html">Итоговый тест</a></li>
+          </ul>
+</nav>
+
+</td>
+<!--Создаём ячейку основного содержания
+Оформление:
+style="width:80%" - основной контент занимает 80% всей площади, 
+оставшиеся 20% для меню-->
+<td  style="width:80%">
+     <hr color='#00ff23 '>
+<h2 align='center'>Список практических работ:</h2>
+
+<ol>
+     
+     <details>
+          <summary>Практическая работа №1 «Разработка веб-страниц с использованием простейших операторов».</summary>
+          <p><ul >
+            
+               <a   > <li onclick="myWindowA()" > Задание 1</a>
+                    <a > <li onclick="myWindowAA()"  > Задание 2</a>
+                         <a> <li onclick="myWindowAAA()" > Задание 3</a></li>
+                            
+                              
+                </ul></p>
+        </details>
+
+        <details>
+          <summary>Практическая работа №2 «Использование условных операторов и оператора выбора».</summary>
+          <p><ul>
+               <a > <li onclick="myWindowB()" > Задание 1</a>       
+                </ul></p>
+        </details>
+
+        <details>
+          <summary>Практическая работа №3 «Использование операторов цикла при составлении сценариев».</summary>
+          <ul>
+               <a\> <li onclick="myWindowC()"> Задание 1</a>
+                    <a \> <li onclick="myWindowCC()" > Задание 2</a>
+                         <a\> <li onclick="myWindowCCC()"> Задание 3</a>
+                            
+                              
+                </ul>
+        </details>
+
+        <details>
+          <summary> Практическая работа №4 «Использование функций при составлении сценариев».</summary>
+          <ul>
+               <a> <li onclick="myWindowD()" > Задание 1</a>
+                    <a > <li onclick="myWindowDD()"  > Задание 2</a>
+                         <a > <li onclick="myWindowDDD()" > Задание 3</a>
+                            
+                              
+                </ul>
+        </details>
+
+       
+
+        <details>
+          <summary> Практическая работа №5 «Работа со строками в языке JavaScript».</summary>
+          <ul>
+               <a > <li onclick="myWindowE()" > Задание 1</a>
+                    <a > <li onclick="myWindowEE()"> Задание 2</a>
+                         <a onclick="myWindowEEE()"> <li > Задание 3</a>
+                            
+                              
+                </ul>
+        </details>
+
+        <details>
+          <summary>  Практическая работа №6 «Разработка сценариев с использованием массивов».</summary>
+          <ul>
+               <a > <li onclick="myWindowL()"> Задание 1</a>       
+                </ul>
+        </details>
+    
+        <details>
+          <summary>  Практическая работа №7 «Использование пользовательских объектов».</summary>
+          <ul>
+               <a > <li onclick="myWindowF()"> Задание 1</a>
+                    <a > <li onclick="myWindowFF()"> Задание 2</a>
+                         <a> <li onclick="myWindowFFF()"> Задание 3</a>
+                              <a > <li onclick="myWindowFFFF()"> Задание 4</a>
+                                   <a> <li onclick="myWindowFFFFF()"> Задание 5</a>
+                              
+                </ul>
+        </details>
+
+        <details>
+          <summary>   Практическая работа №8 «Работа с объектами браузера и документа».</summary>
+          <ul>
+               <a > <li onclick="myWindowM()"> Задание 1</a>
+                    <a > <li  onclick="myWindowMM()"> Задание 2</a>
+                         <a > <li onclick="myWindowMMM()"> Задание 3</a>
+                           
+                              
+                </ul>
+        </details>
+
+        <details>
+          <summary>  Практическая работа №9 «Работа с изображениями. Создание таблиц».</summary>
+          <ul>
+               <a > <li onclick="myWindowP()"> Задание 1</a>
+                    <a > <li onclick="myWindowPP()"> Задание 2</a>
+                         <a > <li onclick="myWindowPPP()"> Задание 3</a>
+                              <a> <li onclick="myWindowPPPP()"> Задание 4</li></a>
+
+                                   <br><b>Работа с таблицами:</b>
+                                   <a > <li onclick="myWindowPPPP1()"> Задание 1</a>
+                                        <a > <li onclick="myWindowPPPP2()"> Задание 2</a>
+                                             <a > <li onclick="myWindowPPPP3()"> Задание 3</a> 
+                </ul>
+        </details>
+
+        <details>
+          <summary> Практическая работа №10 «Разработка скриптов с использованием обработчиков событий».</summary>
+          <ul>
+               <a > <li onclick="myWindowZ()"> Задание 1</a>
+                    <a > <li onclick="myWindowZZ()"> Задание 2</a>
+                         <a > <li onclick="myWindowZZZ()"> Задание 3</a>
+                              <a > <li onclick="myWindowZZZZ()"> Задание 4</a>
+                                   <a > <li onclick="myWindowZZZZZ()"> Задание 5</a>
+                                        <a > <li onclick="myWindowZZZZZZ()"> Задание 6</a>
+                                             <a > <li onclick="myWindowZZZZZZZ()"> Задание 7</a>
+                                                  <a > <li onclick="myWindowZZZZZZZZ()"> Задание 8</a>
+                                                    
+                </ul>
+        </details>
+    
+    
+  
+
+
+
+
+
+
+
+
+</ol>
+<hr color='#00ff23 '>
+<!--Закрываем ячейку, строку, таблицу-->
+</td>
+</tr>
+</table>
+
+<!--ПОДВАЛ-->
+
+<!--Создаём таблицу подвала-->
+<table
+border="1"
+bgcolor="#014221"
+height="100"
+cellpadding="10"
+style="width:100%; border-radius:5px;">
+<!--Создаём строку.-->
+<tr>
+<!--Создаём столбец-->
+<th>
+<h6>	&#169; Еремеев Антон, 2024 <br>
+студент 3 курса специальности 44.02.06. Профессиональное обучение (по отраслям) - по отрасли информатика и вычислительная техника
+</h6>
+<!--Закрываем таблицу подвала. При желании в подвале можно сделать несколько строк и столбцов-->
+</th>
+</tr>
+</table>
+<!--Закрываем таблицу контейнера-->
+</td>
+</tr>
+</table>
+
+<!-- пишем скрипт -->
+<script>
+var date = new Date();
+var months = [ 'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря' ];
+var tekm = date.getMonth();
+document.getElementById('gh').innerHTML = "Сегодня: " + date.getDate() + ' ' + months[tekm] + ' ' + date.getFullYear(); 
+function digitalWatch() {
+var da = new Date();
+var hours = da.getHours();
+var minutes = da.getMinutes();
+var seconds = da.getSeconds();
+if (hours < 10) hours = "0" + hours;
+if (minutes < 10) minutes = "0" + minutes;
+if (seconds < 10) seconds = "0" + seconds;
+document.getElementById('tm').innerHTML = hours + ":" + minutes + ":" + seconds;
+setTimeout("digitalWatch()", 1000);
+
+}
+function myWindowA(){
+var myw=window.open("Содержание/1/1.html","_blank","top=100 left=100 width=600 height=500")
+}
+function myWindowAA(){
+var myw=window.open("Содержание/1/2.html","_blank","top=100 left=100 width=600 height=500")
+}
+function myWindowAAA(){
+var myw=window.open("Содержание/1/3.html","_blank","top=100 left=100 width=600 height=500")
+}
+function myWindowB(){
+     var myw=window.open("Содержание/2/zadaha.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowC(){
+     var myw=window.open("Содержание/3/Задача 1.Html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowCC(){
+     var myw=window.open("Содержание/3/Задача 2 .Html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowCCC(){
+     var myw=window.open("Содержание/3/Задача 3.Html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowD(){
+     var myw=window.open("Содержание/4/Задача 1.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowDD(){
+     var myw=window.open("Содержание/4/Задача 2.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowDDD(){
+     var myw=window.open("Содержание/4/задача 3 .html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowD(){
+     var myw=window.open("Содержание/4/Задача 1.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowDD(){
+     var myw=window.open("Содержание/4/Задача 2.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowDDD(){
+     var myw=window.open("Содержание/4/задача 3 .html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowE(){
+     var myw=window.open("Содержание/5/2.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowEE(){
+     var myw=window.open("Содержание/5/3.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowEEE(){
+     var myw=window.open("Содержание/5/8.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowL(){
+     var myw=window.open("Содержание/6/8.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowF(){
+     var myw=window.open("Содержание/7/1.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowFF(){
+     var myw=window.open("Содержание/7/2.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowFFF(){
+     var myw=window.open("Содержание/7/3.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowFFFF(){
+     var myw=window.open("Содержание/7/4.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowFFFFF(){
+     var myw=window.open("Содержание/7/5.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowM(){
+     var myw=window.open("Содержание/8/1.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowMM(){
+     var myw=window.open("Содержание/8/2.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowMMM(){
+     var myw=window.open("Содержание/8/3.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowP(){
+     var myw=window.open("Содержание/9/1/1.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowPP(){
+     var myw=window.open("Содержание/9/2/2.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowPPP(){
+     var myw=window.open("Содержание/9/3/3.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowPPPP(){
+     var myw=window.open("Содержание/9/4/4.html","_blank","top=100 left=100 width=600 height=500")
+     }
+
+     function myWindowPPPP1(){
+     var myw=window.open("Содержание/9 table/1.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowPPPP2(){
+     var myw=window.open("Содержание/9 table/2.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowPPPP3(){
+     var myw=window.open("Содержание/9 table/3.html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowZ(){
+     var myw=window.open("Содержание/10/Задание 1.Html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowZZ(){
+     var myw=window.open("Содержание/10/Задание 2.Html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowZZZ(){
+     var myw=window.open("Содержание/10/Задание 3.Html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowZZZZ(){
+     var myw=window.open("Содержание/10/Задание 4.Html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowZZZZZ(){
+     var myw=window.open("Содержание/10/Задача 1.Html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowZZZZZZ(){
+     var myw=window.open("Содержание/10/Задача 2.Html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowZZZZZZZ(){
+     var myw=window.open("Содержание/10/Задача 3.Html","_blank","top=100 left=100 width=600 height=500")
+     }
+     function myWindowZZZZZZZZ(){
+     var myw=window.open("Содержание/10/Задача 4.Html","_blank","top=100 left=100 width=600 height=500")
+     }
+</script>
+
+</html>

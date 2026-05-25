@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="text.css">
+<title>Портфолио работ</title>
+<style type="text/css">
+ul.menu{
+list-style:none; /* Убираем маркер списка */
+/* background:Gold;  Задаём цвет фона меню или списка */
+width:8em; /* Ширина блока */
+padding:0 0 0 0; /* Отступы внутри блока */
+font-size: 14pt;
+}
+li.submenu{
+width:90%; /* Ширина пункта */
+margin:0.3em 1em 0.3em 0; /* задаём значение полей вокруг пункта */
+padding:0.5em; /* Задаём отступы внутри пункта */
+background:rgb(25, 88, 9); /* Цвет фона */
+}
+h3.mainmenu{
+width:90%; /* Ширина пункта */
+margin:0.3em 1em 0.3em 0; /* задаём значение полей вокруг пункта */
+padding:0.5em; /* Задаём отступы внутри пункта */
+background:rgb(25, 88, 9); /* Цвет фона */
+}
+li a{
+text-decoration:none; /* Убираем нижнее подчеркивание у ссылок */
+color:#03ce2f; /* Цвет текста ссылки */
+}
+/*стиль элемента списка и ссылки при наведении на него курсора мыши*/
+li:hover,li:hover a {
+background:#01470d; /* Фон пункта меню при выделении */
+cursor:pointer; /* Устанавливаем вид курсора при выделении пункта меню */
+}
+</style>
+<script>
+var array = new Array(     "2g.gif",     "3g.jpg",     "1g.jpg",    ); 
+    var i = 0;   //функция для смены изображений влево   
+	function left() { 
+	var image = document.getElementById("rotatorbutton");     i--;     if (i < 0) i = array.length - 1;     image.src = array[i];
+	}   //функция для смены изображений вправо   
+	function right() {     var image = document.getElementById("rotatorbutton");     i++;     if (i == array.length) i = 0;     image.src = array[i];   } 
+	</script>
+</head>
+<body background='Содержание/1920x1080-SymbolFall.gif'onload="digitalWatch()">
+	<!--Создаём таблицу контейнер, которой задаём следующее
+	оформление:
+	border="1" - рамка вокруг контейнера. Увеличив число, можно увеличить толщину рамки.
+	align="center" - размещаем контейнер по центру экрана.
+	rules="rows" - убираем двойную рамку.
+	style="width:60%;" - добавляем стилевое свойства, делающее контейнер и весь сайт "резиновым".
+	Сделать полноценный адаптивный дизайн, этим способом невозможно.-->
+	<table border="1" align="center" rules="rows" style="width:60%;" >
+	<!--Создаём строку-->
+	<tr>
+	<!--Создаём ячейку строки-->
+	<td>
+	<!--ШАПКА САЙТА-->
+
+		<!--В ячейке строки создаём ещё одну таблицу для шапки сайта.
+		Оформление:
+		border="0" - рамка толщиной в 0 px
+		background="URL" - картинка в шапке сайта, если требуется.
+		Адрес картинки вы должны вставить свой.
+		bgcolor="#7FFFD4" - фоновый цвет в шапке, если нет картинки.
+		cellpadding="10" - отступ содержимого от рамки не менее 10px.
+		style="width:100%; border-radius:5px;" - добавляем "резиновость"
+		и закругляем уголки рамки-->
+		<table border="0" background="URL" bgcolor="#014221" cellpadding="10" style="width:100%; border-radius:5px;">
+		<!--Создаём строку таблицы-->
+			<tr>
+				<!--Создаём ячейку таблицы с логотипом-->
+				<td> <img src='logo_png.png' width='170' height='150'> </td>
+				<th>
+					<!--Содержание ячейки Заголовок сайта-->
+					<h1 style='margin-bottom: -25px; color:rgb(0, 255, 13);'> Портфолио практических работ <br> Еремеева Антона Андреевича</h1>
+					<h4>представлены работы с использованием основ <br>языка веб-программирования JavaScript</h4>
+					<h5  align='right' style='margin-bottom: -25px' id='gh'><h5><!--Сегодняшняя дата-->
+<h5  align='right' id='tm' ><h5><!--Время в данный момент-->
+				<!--Закрываем таблицу ШАПКА САЙТА-->
+				</th>
+			</tr>
+		</table>
+
+		<!--ОСНОВНОЙ КОНТЕНТ-->
+
+		<!--В этой же ячейке контейнера создаём ещё одну таблицу lля основного контента.
+		Оформление как и в предыдущей таблице-->
+
+		<table border="1" bgcolor="LightGray" cellpadding="10" style="width:100%; border-radius:5px;">
+		<!--Создаём строку-->
+		<tr>
+		<!--Меню-->
+		<!--Создаём ячейку меню-->
+		<td bgcolor="LightGray" valign='top'>
+		<h3 class='mainmenu'>Меню сайта:</h3>
+		<nav>
+				  <ul class='menu'>
+						
+					   <li class='submenu'><a href="index.html">Главная</a></li>
+					   <li class='submenu'><a href="page2.html">Фотогалерея</a></li>
+					   <li class='submenu'><a href="page3.html">Итоговый тест</a></li>
+				  </ul>
+		</nav>
+
+		</td>
+		<!--Создаём ячейку основного содержания
+		Оформление:
+		style="width:80%" - основной контент занимает 80% всей площади, 
+		оставшиеся 20% для меню-->
+		<td  style="width:80%">
+	<center> 
+		<hr color='#00ff23 '>
+	<h2>Простейшая галерея изображений</h2> 
+	</center>   
+	<table align='center'>   
+	<tr>     
+	<td>  <!--внопка смены изображений влево, т.е. назад-->       
+	<input type = 'button' name = 'left' value = '<' onclick = 'left()' />     
+	</td>     
+	<td>  <!--вывести через скрипт изображение из массива с указанными размерами-->       
+	<script>         
+	document.write("<img  id  =  'rotatorbutton'  src  = '"  +  array[0]  +  "'width  = '200' height = '200' />" );       
+</script>     
+</td>     
+<td>  <!--Кнопка смены изображений вправо, т.е. вперед-->       
+<input type = 'button' name = 'right' value = '>' onclick = 'right()' />     
+</td>   
+</tr> 
+</table>  
+		
+		<hr color='#00ff23  '>
+		<!--Закрываем ячейку, строку, таблицу-->
+		</td>
+		</tr>
+		</table>
+
+		<!--ПОДВАЛ-->
+		<!--Создаём таблицу подвала-->
+			<table 	border="1" bgcolor="#014221" height="100" cellpadding="10" 	style="width:100%; border-radius:5px;">
+			<!--Создаём строку.-->
+			 <tr>
+			 <!--Создаём столбец-->
+				  <th>
+				  <h6>	&#169; Еремеев Антон, 2023 <br>
+				  студент 3 курса специальности 44.02.06. Профессиональное обучение (по отраслям) - по отрасли информатика и вычислительная техника
+				  </h6>
+				  <!--Закрываем таблицу подвала. При желании в подвале можно сделать несколько строк и столбцов-->
+				  </th>
+			 </tr>
+			 </table>
+		 <!--Закрываем таблицу контейнера-->
+		 </td>
+		 </tr>
+	</table>
+
+	<!-- пишем скрипт -->
+	<script>
+var date = new Date();
+var months = [ 'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря' ];
+var tekm = date.getMonth();
+document.getElementById('gh').innerHTML = "Сегодня " + date.getDate() + ' ' + months[tekm] + ' ' + date.getFullYear(); 
+function digitalWatch() {
+var da = new Date();
+var hours = da.getHours();
+var minutes = da.getMinutes();
+var seconds = da.getSeconds();
+if (hours < 10) hours = "0" + hours;
+if (minutes < 10) minutes = "0" + minutes;
+if (seconds < 10) seconds = "0" + seconds;
+document.getElementById('tm').innerHTML = hours + ":" + minutes + ":" + seconds;
+setTimeout("digitalWatch()", 1000);
+}
+
+	</script>
+
+</body>
+</html>
