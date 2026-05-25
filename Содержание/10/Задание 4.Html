@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>События</title>
+</head>
+<body>
+    <input type="button" value="Кнопка">
+    <p id="elem1">Веб-дизайн</p>
+    <script>
+        var par=document.body.firstElementChild;
+        par.onmousedown=function(){
+            this.style.background='red';
+        }
+        par.onmouseup=function(){
+            this.style.background='transparent';
+        }
+        par.onmouseover=function(){
+            this.style.background='green';
+        }
+        par.onmouseup=function(){
+            this.style.background='transparent';
+        }
+      var  par2 =document.getElementById('elem1'); 
+        par2.onmousedown=function(){
+            this.style.color=' purple';
+        };
+        par2.onmouseup=function(){
+            this.style.background='transparent';
+        };
+        par2.onmouseover=function(){
+            this.style.color=' purple';
+        };
+        par.onmouseup=function(){
+            this.style.background='transparent';
+        };
+    </script>
+</body>
+</html>

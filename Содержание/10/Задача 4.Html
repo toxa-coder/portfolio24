@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>События</title>
+</head>
+<body>
+ <input type="button" value="Кнопка">
+ <script>
+    function handler() {
+        alert ('Обработчик 1');
+    };
+    var button=document.body.firstElementChild;
+    button.addEventListener('click',handler);
+    button.addEventListener('click',function() {
+        alert ('Обработчик 2')});
+    button.removeEventListener('click', handler);
+    button.removeEventListener('click',function(){ 
+        alert ('Обработчик 2')});
+ </script>  
+</body>
+</html>

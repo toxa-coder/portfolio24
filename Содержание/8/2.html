@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myWindow;
+        function myWindowOpen (){
+            myWindow=window.open("http://yandex.ru", "MyWindow", "top=250 left=250 width=250, height=250 ");
+
+        }
+function myWindowClose(){
+if (myWindow){
+    myWindow.close();
+    myWindow=null;
+}
+}
+    </script>
+    <button onclick="myWindowOpen()">Открыть окно</button>
+    <button onclick="myWindowClose">Закрыть окно</button>
+</body>
+</html>

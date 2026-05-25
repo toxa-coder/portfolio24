@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="goBack()">Вернуться назад</button>
+    <button onclick="goForward()">Перейти вперёд</button>
+    <button onclick="goGo()">Перейти на заданную страницу</button>
+    <button onclick="MyWindowOpen()">Открыть окно</button>
+    <script>
+        document.write('<br>'+"Количество страниц, просмотренных в текущем окне, равно"+history.length);
+        function goBack(){
+            history.back();
+        }
+        function goForward(){
+            history.forward();
+        }
+        function goGo(n){
+           var n=prompt('На какую страницу перейти?','');
+           history.go(n);
+        }
+        var MyWindow;
+        function MyWindowOpen(){
+           MyWindow=window.open("http://yandex.ru", "_self", "top=250 left=250 width=250, height=250 ")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myBrowser=new Object();
+        myBrowser.name="Microdoft Internet Explorer";
+        myBrowser["version"]="9.0";
+        for(var x in myBrowser){
+            document.write("1 способ"+x);
+            document.write("2 способ"+myBrowser[x]);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Разработать функцию, которая отнимает от первого второе и делит на третье</p>
+    <i>Первое число</i>
+    <b id="ch1"></b>
+    <i>Второе число</i>
+    <b id="ch2"></b>
+    <i>Третье число</i>
+    <b id="ch3"></b>
+    <i>Результат</i>
+    <b id="rez"></b>
+<script>
+    var x=prompt('Введите первое число','')
+    x=parseInt(x);
+    var y=prompt('Введите второе число','')
+    y=parseInt(y);
+    var z=prompt('Введите третье число','')
+    z=parseInt(z);
+    document.getElementById('ch1').innerHTML=x;
+    document.getElementById('ch2').innerHTML=y;
+    document.getElementById('ch3').innerHTML=z;
+    function z2(a,b,c) {
+        return((a-b)/c);
+    }
+    document.getElementById('rez').innerHTML=z2(x,y,z);
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация о браузере</title>
+</head>
+
+<body><h3>Информация о web-браузере пользователя</h3><hr>
+    <script>
+    var firstn=prompt("Введите ваше имя:","Ваше имя");
+    document.write("Привет,"+firstn +". Вы используете" +navigator.AppName +".Версия" + navigator.appVersion +"<br />");
+    document.write("Язык браузера:"+navigator.language + "<br />");
+    document.write("Название OC:"+navigator.oscpu+ "<br />");
+    document.write("Геолокация:"+navigator.geolocation + "<br />");
+    document.write("Платформа:"+navigator.platform + "<br />");
+    document.write("Движок:"+navigator.usesAgent+ "<br />");
+</script>
+</body>
+</html>

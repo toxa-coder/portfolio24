@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function changeimg(){
+            document.getElementById("myimg").src=document.myform.mysrc.value;
+            document.getElementById("myimg").width=document.myform.mywidth.value;
+            document.getElementById("myimg").height=document.myform.myheight.value;
+        }
+    </script>
+     </head>
+    <body>
+        <form id="myform" name="myform">
+            Файл:
+            <select id="mysrc" name="mysrc">
+                <option value="1.png"/>Картинка 1
+                <option value="2.png"/>Картинка 2
+                <option value="3.png"/>Картинка 3
+               </select>
+               <br/>
+               <input id="mywidth" name="mywidth" type="text" value="200" size="4"/>
+               <input id="myheight" name="myheight" type="text" value="100" size="4"/>
+               <br/>
+               <input id="applay" name="applay" type="button" value="Применить" onclick="changeimg()"/>
+               <input id="cancel" name="cancel" type="button" value="Отмена" onclick="document.myform.reset(); changeimg()"/>
+               </form>
+<img id="myimg" name="myimg" src="1.png" alt="Картинка" width="=200" height="100">
+    </body>
+</body>
+</html>

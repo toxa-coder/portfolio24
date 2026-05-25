@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var newElem=document.createElement("table");
+        newElem.setAttribute('width','50%');
+        newElem.border='1';
+        var newRow1=newElem.insertRow(0);
+        var newCell1=newRow1.insertCell(0);
+        newCell1.width="200";
+        newCell1.innerHTML="строка 1 ячейка 1";
+        var newCell2=newRow1.insertCell(1);
+        newCell1.width="200";
+        newCell2.innerHTML="строка 1 ячейка 2";
+        var newRow2=newElem.insertRow(1);
+        var newCell3=newRow2.insertCell(0);
+        newCell3.setAttribute('colSpan','2');
+        newCell3.align='center';
+        newCell3.innerHTML="строка 2 ячейка 1";
+        document.body.appendChild(newElem);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>События</title>
+</head>
+<body>
+    <p>Наведите курсор</p>
+    <script>
+        var par=document.body.firstElementChild;
+        par.onmouseover=function(){
+            this.style.background=' purple';
+        }
+        par.onmouseout=function(){
+            this.style.background='transparent';
+        }
+    </script>
+</body>
+</html>

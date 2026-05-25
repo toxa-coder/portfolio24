@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOm-интерфейс</title>
+</head>
+<body>
+    <button onclick="showURL()">URL инфо </button>
+    <script>
+        function showURL() {
+            document. write('href:' + location.href +'<br>');
+            document. write('protocol:' + location.protocol +'<br>');
+            document. write('host:' + location.host +'<br>');
+            document. write('hostname:' + location.hostname +'<br>');
+            document. write('port:' + location.port +'<br>');
+            document. write('pathname:' + location.pathname +'<br>');
+            document. write('search:' + location.search +'<br>');
+            document. write('hash:' + location.hash +'<br>')
+        }
+    </script>
+</body>
+</html>

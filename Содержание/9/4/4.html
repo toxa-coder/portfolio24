@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var k=1;
+        function ref(){
+            k=6;
+        }
+        function succpict()  {
+            var d=document;
+            if(k<=5){
+                if (k==1){d.mypict.src="1.jpg"; k++;}
+                else if (k==2){d.mypict.src="2.jpg"; k++;}
+                else if (k==3){d.mypict.src="3.jpg"; k++;}
+                else if (k==4){d.mypict.src="4.webp"; k++;}
+                else if (k==5){d.mypict.src="5.webp"; k=1;}
+                setTimeout('succpict()',2000);
+            }
+        }  
+     
+    </script>
+</head>
+
+<body onLoad="succpict()">
+    <p>Просмотр рисунков</p>
+<img src="1.jpg" name="mypict" width="500">
+<form>
+    <input type="reset" value="Остоновить" onclick="ref();">
+    <input type="button" value="Начать снова" onclick="k=1; succpict();">
+</form>
+</body>
+</html>
